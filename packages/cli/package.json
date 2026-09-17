@@ -1,0 +1,16 @@
+{
+  "name": "@openpolestar/cli",
+  "version": "0.0.1",
+  "description": "Unofficial Polestar EU Data Act API cli. Placeholder — not yet functional. Not affiliated with Polestar.",
+  "type": "module",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "publishConfig": { "access": "public" },
+  "repository": { "type": "git", "url": "https://github.com/openpolestar/sdk" },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "typecheck": "tsc --noEmit"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@openpolestar/api",
+  "version": "0.0.1",
+  "description": "Unofficial TypeScript client for the Polestar EU Data Act (M2M) API. Not affiliated with Polestar.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openpolestar/sdk"
+  },
+  "keywords": [
+    "polestar",
+    "eu-data-act",
+    "telemetry",
+    "ev",
+    "openapi"
+  ]
+}
