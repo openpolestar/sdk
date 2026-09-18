@@ -2,6 +2,13 @@
   "name": "@openpolestar/api",
   "version": "0.0.1",
   "description": "Unofficial TypeScript client for the Polestar EU Data Act (M2M) API. Not affiliated with Polestar.",
+  "type": "module",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "access": "public"
   },
@@ -15,5 +22,14 @@
     "telemetry",
     "ev",
     "openapi"
-  ]
+  ],
+  "scripts": {
+    "generate": "openapi-typescript ../../spec/openapi.json -o src/generated/schema.d.ts",
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "openapi-typescript": "^7.13.0"
+  }
 }
